@@ -1,0 +1,57 @@
+.error-boundary {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #0D1117 0%, #161B22 100%);
+}
+
+.error-content {
+  text-align: center;
+  max-width: 500px;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.error-icon {
+  font-size: 4rem;
+  color: #FF6B6B;
+  margin-bottom: 1.5rem;
+}
+
+.error-content h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.error-content p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.error-retry-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #FFC107 0%, #FF9800 100%);
+  color: #000;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.error-retry-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 193, 7, 0.3);
+}

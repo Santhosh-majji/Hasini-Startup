@@ -1,0 +1,152 @@
+.under-development {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background: radial-gradient(ellipse at center, rgba(255, 193, 7, 0.05) 0%, transparent 70%),
+              radial-gradient(ellipse at 80% 20%, rgba(33, 150, 243, 0.05) 0%, transparent 50%);
+}
+
+.dev-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dev-icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 40px;
+  background: var(--primary-gradient);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #000;
+  box-shadow: 0 20px 40px rgba(255, 193, 7, 0.3);
+}
+
+.dev-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.dev-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.dev-features {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.dev-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.dev-feature:hover {
+  transform: translateY(-5px);
+}
+
+.dev-feature svg {
+  color: #FFC107;
+  font-size: 1.2rem;
+}
+
+.dev-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.dev-actions .gradient-btn,
+.dev-actions .glass-btn {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dev-progress {
+  margin-top: 40px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--primary-gradient);
+  border-radius: 4px;
+  position: relative;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+.dev-progress p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@media (max-width: 768px) {
+  .dev-title {
+    font-size: 2.2rem;
+  }
+
+  .dev-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .dev-features {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .dev-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dev-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 2.5rem;
+  }
+}
