@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
-import { FiCode, FiSmartphone, FiLayers, FiCloud, FiDatabase, FiTrendingUp, FiShield, FiGlobe } from 'react-icons/fi';
+
 import './Services.css';
 
 const Services = () => {
